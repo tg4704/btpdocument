@@ -8,26 +8,7 @@ This matters because accurate models are crucial for planning and operating the 
 
 # Python Environment Setup Guide for Jupyter in VS Code
 
-## Step 1: Install Python
-1. Download Python from [python.org](https://www.python.org/downloads/)
-2. Verify installation by opening Command Prompt/Terminal and typing:
-   ```
-   python --version
-   ```
-
-## Step 2: Install VS Code
-1. Download VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
-2. Install it with default settings
-
-## Step 3: Install VS Code Extensions
-1. Open VS Code
-2. Go to Extensions (Ctrl+Shift+X)
-3. Install these extensions:
-   - **Python** (by Microsoft)
-   - **Jupyter** (by Microsoft)
-   - **Jupyter Keymap** (optional, for familiar shortcuts)
-
-## Step 4: Create a Virtual Environment (Recommended)
+## Step 1: Create a Virtual Environment
 1. Open VS Code
 2. Open Terminal in VS Code (Ctrl+`)
 3. Navigate to your project folder:
@@ -42,7 +23,7 @@ This matters because accurate models are crucial for planning and operating the 
    - **Windows:** `myenv\Scripts\activate`
    - **Mac/Linux:** `source myenv/bin/activate`
 
-## Step 5: Install Required Libraries
+## Step 2: Install Required Libraries
 Copy and paste this command in your terminal (make sure virtual environment is activated):
 
 ```bash
@@ -54,7 +35,7 @@ If you get errors with pypower, try:
 pip install PYPOWER
 ```
 
-## Step 6: Set Up Jupyter in VS Code
+## Step 3: Set Up Jupyter in VS Code
 1. Create a new file with `.ipynb` extension (e.g., `power_analysis.ipynb`)
 2. VS Code will automatically detect it as a Jupyter notebook
 3. Select your Python interpreter:
@@ -62,7 +43,7 @@ pip install PYPOWER
    - Type "Python: Select Interpreter"
    - Choose the one from your virtual environment (should show the path to myenv)
 
-## Step 7: Test Your Setup
+## Step 4: Test Your Setup
 Create a new cell in your notebook and run:
 
 ```python
@@ -80,7 +61,7 @@ print("All libraries imported successfully!")
 print("NumPy version:", np.__version__)
 ```
 
-## Step 8: Running Your Code
+## Step 5: Running Your Code
 - Click on a cell and press `Shift+Enter` to run it
 - Use `Ctrl+Enter` to run without moving to next cell
 - Add new cells with the `+` button
